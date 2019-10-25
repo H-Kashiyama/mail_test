@@ -4,7 +4,7 @@ class SystemMailer < ApplicationMailer
 
   def complete_mail(user)
     @user = user
-    @url = "http://localhost:3000/users/#{@user.id}"
+    @url = "https://pg-study.herokuapp.com/login"
     mail(subject: "COMPLETE join your address" ,to: @user.email)
   end
 end
